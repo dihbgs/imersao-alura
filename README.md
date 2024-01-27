@@ -1,4 +1,4 @@
-# Alura - Spotify clone
+# A.S.C.I.I. - Another Spotify's Clone Irrelevant Implementation
 
 This project was made during the Frontend Immersion from Alura.
 
