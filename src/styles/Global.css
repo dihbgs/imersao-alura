@@ -11,14 +11,16 @@
   --font-primary-color: #fff;
   --font-secondary-color: #a7a7a7;
 
-  --font-primary-size: 1.5rem;
   --font-family: manrope, sans-serif;
+  --font-primary-size: 1.5rem;
 
   /* Browse Panel */
   --panel-background: #121212;
   --min-container-width: 372px;
-  --grid-gap: 12px;
+  --container-padding: 16px;
+  --container-border: 8px;
   --column-count: 5;
+  --grid-gap: 12px;
 }
 
 body {

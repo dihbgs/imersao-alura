@@ -1,20 +1,29 @@
 .Card {
   display: flex;
-  justify-content: center;
-}
-
-.Card img {
-  display: block;
-  width: 30%;
-  margin: 0px;
-  padding: 0px;
+  overflow: hidden;
   aspect-ratio: 1/1;
-  object-fit: cover;
+  position: relative;
+  border-radius: var(--container-border);
 }
 
 .Card h2 {
   margin: 0px;
   display: flex;
   color: var(--font-primary-color);
+  padding: var(--container-padding);
   font-size: var(--font-primary-size);
+}
+
+.Card img {
+  transform: rotate(25deg) translate(18%, -2%);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  position: absolute;
+  object-fit: cover;
+  display: block;
+  height: 100px;
+  width: 100px;
+  padding: 0px;
+  margin: 0px;
+  bottom: 0;
+  right: 0;
 }
