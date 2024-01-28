@@ -18,7 +18,10 @@
   --panel-background: #121212;
   --min-container-width: 372px;
   --container-padding: 16px;
+  --card-img-height: 100px;
+  --card-img-width: 100px;
   --container-border: 8px;
+  --card-ratio: 1/1;
   --column-count: 5;
   --grid-gap: 12px;
 }
@@ -37,4 +40,14 @@ body {
   grid-gap: var(--grid-gap);
   grid-auto-rows: auto;
   grid-template-rows: 1fr;
+}
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --font-primary-size: 1rem;
+    --column-count: 3;
+    --card-ratio: 2/1;
+    --card-img-height: 50px;
+    --card-img-width: 50px;
+  }
 }

@@ -1,8 +1,8 @@
 .Card {
   display: flex;
   overflow: hidden;
-  aspect-ratio: 1/1;
   position: relative;
+  aspect-ratio: var(--card-ratio);
   border-radius: var(--container-border);
 }
 
@@ -18,11 +18,11 @@
 .Card img {
   transform: rotate(25deg) translate(18%, -2%);
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  height: var(--card-img-height);
+  width: var(--card-img-width);
   position: absolute;
   object-fit: cover;
   display: block;
-  height: 100px;
-  width: 100px;
   padding: 0px;
   margin: 0px;
   bottom: 0;
