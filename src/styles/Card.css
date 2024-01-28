@@ -9,6 +9,7 @@
 .Card h2 {
   margin: 0px;
   display: flex;
+  text-transform: capitalize;
   color: var(--font-primary-color);
   padding: var(--container-padding);
   font-size: var(--font-primary-size);
