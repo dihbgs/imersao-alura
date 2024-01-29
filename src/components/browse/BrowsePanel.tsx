@@ -32,6 +32,7 @@ async function genGenre(): Promise<string> {
 }
 
 const BrowsePanel = () => {
+  const [search, setSearch] = useState<string>("a");
   const [cards, setCards] = useState<card[]>([]);
 
   useEffect(() => {
@@ -46,7 +47,11 @@ const BrowsePanel = () => {
     });
   }, []);
 
-  const cardList = cards.map((card) => (
+  const matches = cards.filter((card) => {
+    return card.title.toLowerCase().includes(search.toLowerCase());
+  });
+
+  const cardList = matches.map((card) => (
     <Card
       key={card.title}
       title={card.title}
@@ -57,7 +62,7 @@ const BrowsePanel = () => {
 
   return (
     <>
-      <SearchBar />
+      <SearchBar ontype={setSearch} value={search} />
       <div className="Card-Container">{cardList}</div>
     </>
   );
