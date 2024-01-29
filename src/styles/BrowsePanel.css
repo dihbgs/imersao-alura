@@ -1,0 +1,8 @@
+.Card-Container {
+  display: grid;
+  grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+  min-width: var(--min-container-width);
+  grid-gap: var(--grid-gap);
+  grid-auto-rows: auto;
+  grid-template-rows: 1fr;
+}
