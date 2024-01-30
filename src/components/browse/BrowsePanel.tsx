@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
+import SearchBar from "./SearchHeader";
 import "../../styles/BrowsePanel.css";
-import SearchBar from "./SearchBar";
 import Card from "./Card";
 
 const numberOfCards = 64;
@@ -32,7 +32,7 @@ async function genGenre(): Promise<string> {
 }
 
 const BrowsePanel = () => {
-  const [search, setSearch] = useState<string>("a");
+  const [search, setSearch] = useState<string>("");
   const [cards, setCards] = useState<card[]>([]);
 
   useEffect(() => {
@@ -51,9 +51,9 @@ const BrowsePanel = () => {
     return card.title.toLowerCase().includes(search.toLowerCase());
   });
 
-  const cardList = matches.map((card) => (
+  const cardList = matches.map((card, index) => (
     <Card
-      key={card.title}
+      key={index}
       title={card.title}
       image={card.image}
       color={card.color}
@@ -63,6 +63,7 @@ const BrowsePanel = () => {
   return (
     <>
       <SearchBar ontype={setSearch} value={search} />
+      <h2>Browse all</h2>
       <div className="Card-Container">{cardList}</div>
     </>
   );
