@@ -1,15 +1,10 @@
 import { useEffect, useState } from "react";
-import SearchBar from "./SearchHeader";
-import "../../styles/BrowsePanel.css";
-import Card from "./Card";
+import Card from "./browse/card/Card";
+import { card } from "./BrowseTypes";
+import Header from "./header/Header";
+import "./Browse.css";
 
 const numberOfCards = 64;
-
-interface card {
-  title: string;
-  image: string;
-  color: string;
-}
 
 function genHex(): string {
   return "#" + Math.floor(Math.random() * 16777215).toString(16);
@@ -31,7 +26,7 @@ async function genGenre(): Promise<string> {
   return data;
 }
 
-const BrowsePanel = () => {
+const Browse = () => {
   const [search, setSearch] = useState<string>("");
   const [cards, setCards] = useState<card[]>([]);
 
@@ -62,11 +57,11 @@ const BrowsePanel = () => {
 
   return (
     <>
-      <SearchBar ontype={setSearch} value={search} />
+      <Header ontype={setSearch} value={search} />
       <h2>Browse all</h2>
       <div className="Card-Container">{cardList}</div>
     </>
   );
 };
 
-export default BrowsePanel;
+export default Browse;

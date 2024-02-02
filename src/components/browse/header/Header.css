@@ -1,0 +1,47 @@
+.Header {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: var(--header-padding);
+}
+
+.Header form {
+  -webkit-box-flex: 0;
+  flex: 0 1 364px;
+}
+
+.Header button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  outline: none;
+  background: none;
+  position: relative;
+}
+
+.Header button svg {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.Header svg {
+  width: 48px;
+  fill: var(--icon-fill);
+}
+
+.Header .Search {
+  position: relative;
+
+  &:hover > svg {
+    background-color: aqua;
+  }
+}
+
+.Header .Search svg {
+  fill: var(--search-icon-fill);
+  position: absolute;
+  width: 24px;
+  left: 8px;
+}

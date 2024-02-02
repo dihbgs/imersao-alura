@@ -1,9 +1,17 @@
-import { List } from "./icons/List";
-import { Home } from "./icons/Home";
-import { Search } from "./icons/Search";
-import { Library } from "./icons/Library";
-import { HomeActive } from "./icons/HomeActive";
-import { ChevronLeft } from "./icons/ChevronLeft";
-import { ChevronRight } from "./icons/ChevronRight";
+import { ListIcon } from "./icons/ListIcon";
+import { HomeIcon } from "./icons/HomeIcon";
+import { SearchIcon } from "./icons/SearchIcon";
+import { LibraryIcon } from "./icons/LibraryIcon";
+import { HomeActiveIcon } from "./icons/HomeActiveIcon";
+import { ChevronLeftIcon } from "./icons/ChevronLeftIcon";
+import { ChevronRightIcon } from "./icons/ChevronRightIcon";
 
-export { Home, ChevronLeft, ChevronRight, HomeActive, Library, Search, List };
+export {
+  HomeIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  HomeActiveIcon,
+  LibraryIcon,
+  SearchIcon,
+  ListIcon,
+};

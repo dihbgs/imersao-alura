@@ -1,10 +1,10 @@
-import BrowsePanel from "./components/browse/BrowsePanel";
-import "./styles/Global.css";
+import Browse from "./components/browse/Browse";
+import "./Global.css";
 
 function App() {
   return (
     <>
-      <BrowsePanel />
+      <Browse />
     </>
   );
 }

@@ -4,11 +4,17 @@
   position: relative;
   aspect-ratio: var(--card-ratio);
   border-radius: var(--container-border);
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .Card h2 {
   margin: 0px;
   display: flex;
+  font-weight: 800;
+  letter-spacing: -2px;
   text-transform: capitalize;
   color: var(--font-primary-color);
   padding: var(--container-padding);

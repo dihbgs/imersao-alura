@@ -1,6 +1,6 @@
 import { SVGProps } from "react";
 
-export const List = ({ fill, stroke }: SVGProps<string>) => {
+export const ListIcon = ({ fill, stroke }: SVGProps<string>) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
