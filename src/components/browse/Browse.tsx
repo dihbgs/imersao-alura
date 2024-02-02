@@ -7,7 +7,7 @@ import "./Browse.css";
 const numberOfCards = 64;
 
 function genHex(): string {
-  return "#" + Math.floor(Math.random() * 16777215).toString(16);
+  return "#" + (3355443 + Math.floor(Math.random() * 6710886)).toString(16);
 }
 
 function genPicsum(): string {
