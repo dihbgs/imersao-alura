@@ -6,7 +6,7 @@ import "./Header.css";
 const Header = ({ value, ontype }: searchProps) => {
   return (
     <>
-      <div className="Header">
+      <header>
         <div className="NavButtons">
           <button>
             <ChevronLeftIcon />
@@ -18,7 +18,11 @@ const Header = ({ value, ontype }: searchProps) => {
         <div className="Search">
           <Search value={value} ontype={ontype} />
         </div>
-      </div>
+        <div className="SignButtons">
+          <button>Sign Up</button>
+          <button>Log in</button>
+        </div>
+      </header>
     </>
   );
 };

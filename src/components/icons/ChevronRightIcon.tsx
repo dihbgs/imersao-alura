@@ -2,15 +2,8 @@ import { SVGProps } from "react";
 
 export const ChevronRightIcon = ({ fill, stroke }: SVGProps<string>) => {
   return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 -960 960 960"
-      stroke={stroke}
-      fill={fill}
-      height="48"
-      width="48"
-    >
-      <path d="M535.846-481.231 344.538-673.308l31.231-31.231 222.539 223.308-222.539 222.539-31.231-31.231 191.308-191.308Z" />
+    <svg viewBox="0 0 16 16" stroke={stroke} fill={fill}>
+      <path d="M4.97.47a.75.75 0 0 0 0 1.06L11.44 8l-6.47 6.47a.75.75 0 1 0 1.06 1.06L13.56 8 6.03.47a.75.75 0 0 0-1.06 0z"></path>
     </svg>
   );
 };

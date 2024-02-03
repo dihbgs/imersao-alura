@@ -3,12 +3,13 @@
 :root {
   --white: #fff;
   --black: #000;
-  --decoration: #1ed760;
   --scrollbar: #5a5a5a;
   --icon-fill: #8d8d8d;
+  --decoration: #1ed760;
   --page-background: #000;
   --search-icon-fill: #bdbdbd;
   --search-background: #242424;
+  --button-background: #f6f6f6;
   --search-background-hover: #2a2a2a;
   --search-shadow-hover: 0 0 0 1px #3a3a3a;
 
@@ -22,11 +23,11 @@
   --panel-background: #121212;
   --search-border-radius: 500px;
   --min-container-width: 372px;
+  --header-padding: 16px 24px;
   --container-padding: 16px;
   --card-img-height: 100px;
   --card-img-width: 100px;
   --container-border: 8px;
-  --header-padding: 16px;
   --card-ratio: 1/1;
   --column-count: 6;
   --grid-gap: 12px;
