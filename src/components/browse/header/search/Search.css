@@ -11,9 +11,15 @@
   border-radius: var(--search-border-radius);
   background-color: var(--search-background);
 
+  &:hover {
+    background-color: var(--search-background-hover);
+    box-shadow: var(--search-shadow-hover);
+  }
+
   &:focus {
     border: none;
     outline: none;
     box-shadow: 0 0 0 2px var(--white);
+    background-color: var(--search-background-hover);
   }
 }
