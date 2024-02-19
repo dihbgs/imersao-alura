@@ -19,8 +19,8 @@ const Header = ({ value, ontype }: searchProps) => {
           <Search value={value} ontype={ontype} />
         </div>
         <div className="SignButtons">
-          <button>Sign Up</button>
-          <button>Log in</button>
+          <span>Sign Up</span>
+          <span>Log in</span>
         </div>
       </header>
     </>
