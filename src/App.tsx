@@ -1,5 +1,5 @@
 import Browse from "./components/browse/Browse";
-import "./Global.css";
+import "@/styles/Global.css";
 
 function App() {
   return (

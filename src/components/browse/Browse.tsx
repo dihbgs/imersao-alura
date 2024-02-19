@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Card from "./browse/card/Card";
 import { card } from "./BrowseTypes";
 import Header from "./header/Header";
-import "./Browse.css";
+import "@/styles/Browse.css";
 
 const numberOfCards = 64;
 

@@ -1,6 +1,6 @@
 import { searchProps } from "../../BrowseTypes";
 import { SearchIcon } from "../../../AssetManager";
-import "./Search.css";
+import "@/styles/Search.css";
 
 const Search = ({ value, ontype }: searchProps) => {
   return (
